@@ -29,7 +29,7 @@ function init(){
   }
 
   if (upperCaseBoolean === true){
-    upperCase = (upperCaseCharecrersArray[Math.random90 8 6]);
+    upperCase = (upperCaseCharecrersArray[Math.random() * 6]);
   }
 
   if (specialCharectersBoolean === true){
@@ -40,6 +40,17 @@ function init(){
     numbers = (numbersArray[Math.random() * 6]);
   }
 }
+
+function generatePassword(){
+  let password = "";
+  for (var i = 0; i <length; i++){
+    password += (
+      math.floor(math.random() * upperCaseCharecrersArray, lowerCaseCharectersArray, specialCharectersArray, numbersArray )
+    );
+    return init;
+  }
+}
+  
 function writePassword() {
   var password = generatePassword();
 
@@ -63,4 +74,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword)
